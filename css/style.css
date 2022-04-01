@@ -117,12 +117,6 @@ body._lock{
 .link:hover {
 	text-decoration: underline;
 }
-@media (max-width:950px) {
-	.link::after {
-		display: none;
-		visibility:hidden;
-	}
-}
 
 /* ========================================================================== */
 
@@ -212,6 +206,7 @@ body._lock{
 	top: 0;
 	left: 110%;
 	width: 30px;
+	display: block;
 	height: 100%;
 	background: url("../img/page/icons/Arrow-02.svg") left no-repeat;
 }
@@ -219,7 +214,7 @@ body._lock{
 	text-decoration-line: none;
 }
 @media (max-width:950px) {
-	.link-title-link::after {
+	.menu__icon.active .link-title-link::after {
 		display: none;
 		visibility: hidden;
 	}
