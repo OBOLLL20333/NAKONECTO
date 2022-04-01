@@ -205,8 +205,8 @@ body._lock{
 	position: absolute;
 	top: 0;
 	left: 110%;
+	display: none;
 	width: 30px;
-	display: block;
 	height: 100%;
 	background: url("../img/page/icons/Arrow-02.svg") left no-repeat;
 }
@@ -214,10 +214,7 @@ body._lock{
 	text-decoration-line: none;
 }
 @media (max-width:950px) {
-	.menu__icon.active .link-title-link::after {
-		display: none;
-		visibility: hidden;
-	}
+
 }
 @media (max-width: 767.98px) {
 	.title-link {
@@ -386,11 +383,17 @@ body._lock{
 		z-index: 11;
 		background-color: #000;
 	}
-	.menu__body._active{
+	.menu__body._active {
 		left: 0;
 	}
 	.menu__body._active::before{
 		display: block;
+	}
+	.link-title-link::after {
+		display: none;
+	}
+	body._lock .link::after {
+		display: none;
 	}
 	.menu__icon {
 		display: block;
